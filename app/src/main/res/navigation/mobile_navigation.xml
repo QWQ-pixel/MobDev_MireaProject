@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.mirea.kuznetsova.mireaproject.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@string/menu_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.mirea.kuznetsova.mireaproject.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@string/menu_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.mirea.kuznetsova.mireaproject.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@string/menu_slideshow" />
+    <fragment
+        android:id="@+id/calculateFragment"
+        android:name="com.mirea.kuznetsova.mireaproject.CalculateFragment"
+        android:label="@string/caclulator"
+        tools:layout="@layout/fragment_calculate" />
+    <fragment
+        android:id="@+id/nav_brouser"
+        android:name="com.mirea.kuznetsova.mireaproject.WebViewFragment"
+        android:label="@string/brows"
+        tools:layout="@layout/fragment_web_view" />
+    <fragment
+        android:id="@+id/music"
+        android:name="com.mirea.kuznetsova.mireaproject.Music"
+        android:label="@string/music"
+        tools:layout="@layout/fragment_music" />
+    <activity
+        android:id="@+id/camera_"
+        android:name="com.mirea.kuznetsova.mireaproject.Camera"
+        android:label="@string/camera"
+        tools:layout="@layout/activity_camera_" />
+    <activity
+        android:id="@+id/recorder_"
+        android:name="com.mirea.kuznetsova.mireaproject.Recorder"
+        android:label="@string/record"
+        tools:layout="@layout/activity_recorder" />
+
+</navigation>
