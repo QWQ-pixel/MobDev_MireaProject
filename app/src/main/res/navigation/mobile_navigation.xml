@@ -47,5 +47,20 @@
         android:name="com.mirea.kuznetsova.mireaproject.Recorder"
         android:label="@string/record"
         tools:layout="@layout/activity_recorder" />
+    <fragment
+        android:id="@+id/preferences"
+        android:name="com.mirea.kuznetsova.mireaproject.Preferences"
+        android:label="@string/preference"
+        tools:layout="@layout/fragment_preferences" />
+    <fragment
+        android:id="@+id/history"
+        android:name="com.mirea.kuznetsova.mireaproject.History"
+        android:label="@string/history"
+        tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/map2"
+        android:name="com.mirea.kuznetsova.mireaproject.Map"
+        android:label="@string/map"
+        tools:layout="@layout/fragment_map" />
 
 </navigation>

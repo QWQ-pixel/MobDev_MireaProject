@@ -12,7 +12,7 @@
         android:layout_height="47dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="56dp"
-        android:drawableBottom="@drawable/baseline_stop_white_24"
+        android:drawableBottom="@android:drawable/picture_frame"
         android:onClick="onClickStopMusic"
         app:layout_constraintStart_toEndOf="@+id/play"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"

@@ -1,8 +1,12 @@
 package com.mirea.kuznetsova.mireaproject;
 
 import android.annotation.SuppressLint;
+import android.app.AlertDialog;
+import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.graphics.Typeface;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
@@ -14,6 +18,7 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -41,7 +46,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
     private TextView temperature;
 
-    TextView textLIGHT_available, textLIGHT_reading;
+    private TextView textLIGHT_available, textLIGHT_reading;
 
     @SuppressLint("SetTextI18n")
     @Override
@@ -53,11 +58,6 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         Toolbar toolbar = findViewById(R.id.toolbar);
 
         setSupportActionBar(toolbar);
-
-        FloatingActionButton fab = findViewById(R.id.fab);
-
-        fab.setOnClickListener(view -> Snackbar.make(view, "Coming soon", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show());
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
 
@@ -96,6 +96,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
         textLIGHT_reading = (TextView) findViewById(R.id.LIGHT_reading);
     }
+
     public void OpenBrows(View view){
         WebView webView = (WebView) findViewById(R.id.webView);
 
