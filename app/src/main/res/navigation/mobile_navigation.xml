@@ -62,5 +62,11 @@
         android:name="com.mirea.kuznetsova.mireaproject.Map"
         android:label="@string/map"
         tools:layout="@layout/fragment_map" />
+    <fragment
+        android:id="@+id/fr_network"
+        android:name="com.mirea.kuznetsova.mireaproject.Network"
+        android:label="@string/net"
+        tools:layout="@layout/fragment_network" />
+
 
 </navigation>
